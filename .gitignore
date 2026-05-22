@@ -1,0 +1,31 @@
+# --- Fichiers système et IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Fichiers temporaires de traitement ---
+*.vrt
+*.aux.xml
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- Fichiers générés (données lourdes) ---
+# Si tu souhaites ignorer les résultats pour garder le repo léger :
+data/tiles_6656/
+data/koppen_tiles/
+data/koppen_tiles_smooth/
+data/gebco_merged_v2.tif
+data/tiles_world/
+
+*.tif
+*.xml
+
+# --- Configuration locale ---
+# Si config.sh contient des chemins absolus vers ton PC,
+# il vaut mieux ignorer le fichier original et créer un modèle
+# config.sh.template que tu copies/modifies localement.
+# config.sh

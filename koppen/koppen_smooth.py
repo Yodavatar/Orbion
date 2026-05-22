@@ -36,10 +36,10 @@ OUTPUT_DIR = BASE_PATH / "data" / "koppen_tiles_smooth"
 COLS       = 8
 ROWS       = 4
 
-BLUR_RADIUS  = 2      # pixels de flou gaussien (~8 blocs de transition)
-PERLIN_SCALE = 0.06   # fréquence du bruit sur la grille 128x128
-PERLIN_AMP   = 120     # amplitude max du déplacement en pixels image finale
-PERLIN_OCT   = 4      # octaves Perlin
+BLUR_RADIUS  = 0      # pixels de flou gaussien (~8 blocs de transition)
+PERLIN_SCALE = 0.04   # fréquence du bruit sur la grille 128x128
+PERLIN_AMP   = 260     # amplitude max du déplacement en pixels image finale
+PERLIN_OCT   = 10      # octaves Perlin
 
 # Palette Köppen exacte
 KOPPEN_PALETTE = [

@@ -15,9 +15,6 @@ __pycache__/
 
 # --- Fichiers générés (données lourdes) ---
 # Si tu souhaites ignorer les résultats pour garder le repo léger :
-data/tiles_6656/
-data/koppen_tiles/
-data/koppen_tiles_smooth/
 data/gebco_merged_v2.tif
 data/tiles_world/
 

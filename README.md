@@ -4,14 +4,14 @@ This Orbion repository is a suite of automated tools designed to transform raw g
 ---
 
 ## 🗺️ Table of Contents
-- [Introduction](#-introduction)
-- [Features](#-features)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Contact](#-contact)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contact](#contact)
 
 ---
-## 📖 Introduction
+## Introduction
 Orbion's goal is to enable the creation of realistic Minecraft world maps by automating complex raster data transformation processes.
 
 The pipeline handles:
@@ -22,7 +22,7 @@ The pipeline handles:
 
 ---
 
-## ✨ Features
+## Features
 
 ### 1. Heightmap Processing
 
@@ -42,7 +42,7 @@ The pipeline handles:
 
 ---
 
-## 🚀 Installation
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -57,7 +57,7 @@ Please ensure you have GDAL and Python 3.14+ installed on your system.
 
 ---
 
-## 🛠️ Usage
+## Usage
 
 Orbion is used via a series of Bash scripts. The recommended workflow is as follows:
 

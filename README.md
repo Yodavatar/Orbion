@@ -4,12 +4,11 @@ This Orbion repository is a suite of automated tools designed to transform raw g
 ---
 
 ## 🗺️ Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contribution](#contribution)
-- [License](#license)
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Contact](#-contact)
 
 ---
 ## 📖 Introduction

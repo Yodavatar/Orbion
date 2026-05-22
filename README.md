@@ -48,7 +48,6 @@ The pipeline handles:
 1. **Clone the repository:**
    ```bash
    git clone git@github.com:Yodavatar/Orbion.git
-   cd orbion
    ```
 
 2. **Required dependencies:**

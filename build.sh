@@ -47,25 +47,26 @@ fi
 if [[ "$FROM" == "heightmap" || "$FROM" == "koppen" ]] && [[ $SINGLE_TILE -eq 0 ]]; then
     step "Étape 2/4 : Génération des tuiles Köppen (Beck_KG_V1)"
     cd "$ORBION"
-    bash generate_koppen.sh
+    bash koppen/generate_koppen.sh
     ok "32 tuiles Köppen 6656×6656 générées dans data/koppen_tiles/"
 else
     ok "Étape 2/4 : Biomes Köppen ignorés"
 fi
 
 # ── Étape 3 : Lissage Köppen (Perlin + blur pour transitions fluides) ────────
-if [[ "$FROM" == "heightmap" || "$FROM" == "koppen" || "$FROM" == "smooth" ]] && [[ $SINGLE_TILE -eq 0 ]]; then
+if [[ "$FROM" != "export" ]] && [[ "$FROM" == "heightmap" || "$FROM" == "koppen" || "$FROM" == "smooth" ]] && [[ $SINGLE_TILE -eq 0 ]]; then
     step "Étape 3/4 : Lissage des transitions biomes (Perlin noise)"
     cd "$ORBION"
-    python3 koppen_smooth.py
+    python3 koppen/koppen_smooth.py
     ok "32 tuiles lissées dans data/koppen_tiles/ (overwrite)"
-elif [[ $SINGLE_TILE -eq 1 ]]; then
+
+elif [[ $SINGLE_TILE -eq 1 ]] && [[ "$FROM" != "export" ]]; then
     step "Étape 3/4 : Lissage tuile x=${TILE_COL} y=${TILE_ROW}"
     cd "$ORBION"
-    python3 koppen_smooth.py --col $TILE_COL --row $TILE_ROW
+    python3 koppen/koppen_smooth.py --col $TILE_COL --row $TILE_ROW
     ok "Tuile lissée"
 else
-    ok "Étape 3/4 : Lissage ignoré"
+    ok "Étape 3/4 : Lissage ignoré (ou déjà fait)"
 fi
 
 # ── Étape 4 : Export WorldPainter → Minecraft ─────────────────────────────────
